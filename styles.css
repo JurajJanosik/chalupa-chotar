@@ -108,7 +108,7 @@ section {
     flex-direction: column;
     justify-content: center;
     margin-top: 40px;
-    gap: 10px;
+    /* gap: 10px; */
 }
 
 .gallery img {
@@ -353,19 +353,24 @@ footer p {
     position: relative;
     display: inline-block;
     overflow: hidden;
-    border-radius: 15px; /* Zaoblené rohy */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Jemný tieň */
+    border-radius: 15px;
+    /* Zaoblené rohy */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    /* Jemný tieň */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 100%;
 }
 
 .map-filter-wrapper:hover {
-    transform: scale(1.02); /* Jemné zväčšenie pri hover */
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Zvýraznený tieň pri hover */
+    transform: scale(1.02);
+    /* Jemné zväčšenie pri hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    /* Zvýraznený tieň pri hover */
 }
 
 .map-filter-wrapper iframe {
-    border-radius: inherit; /* Zachovanie zaoblených rohov pre mapu */
+    border-radius: inherit;
+    /* Zachovanie zaoblených rohov pre mapu */
     width: 100%;
 }
 
@@ -373,10 +378,14 @@ footer p {
     display: none;
     font-size: 24px;
     cursor: pointer;
-    position: absolute; /* Nastavenie pozície na absolútnu */
-    top: 10px;          /* Vzdialenosť od horného okraja */
-    left: 10px;         /* Vzdialenosť od ľavého okraja */
-    color: rgb(0, 0, 0);       /* Uistite sa, že je text čitateľný */
+    position: absolute;
+    /* Nastavenie pozície na absolútnu */
+    top: 20px;
+    /* Vzdialenosť od horného okraja */
+    left: 20px;
+    /* Vzdialenosť od ľavého okraja */
+    color: rgb(0, 0, 0);
+    /* Uistite sa, že je text čitateľný */
 }
 
 .mobile-menu {
@@ -415,6 +424,7 @@ footer p {
     text-align: right;
     display: block;
 }
+
 #head-nav ul {
     list-style: none;
     margin: 0;
@@ -436,15 +446,18 @@ footer p {
     background-color: #f8f8f8;
     text-align: center;
 }
+
 .section-title {
     font-size: 2rem;
     margin-bottom: 20px;
 }
+
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
 .card {
     width: 250px;
     margin: 20px;
@@ -454,16 +467,19 @@ footer p {
     padding: 20px;
     text-align: center;
 }
+
 .card i {
     font-size: 40px;
     color: #28a745;
     margin-bottom: 15px;
 }
+
 .card h3 {
     font-size: 1.2rem;
     margin-bottom: 10px;
     color: #333;
 }
+
 .card p {
     font-size: 0.9rem;
     color: #666;
@@ -491,7 +507,8 @@ footer p {
 .equipment-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2em; /* Medzery medzi zoznamami */
+    gap: 2em;
+    /* Medzery medzi zoznamami */
     justify-items: start;
     align-items: start;
     max-width: 1200px;
@@ -506,7 +523,8 @@ footer p {
 
 .equipment-list li {
     font-size: 1em;
-    margin-bottom: 1em; /* Väčšia medzera medzi riadkami */
+    margin-bottom: 1em;
+    /* Väčšia medzera medzi riadkami */
     display: flex;
     align-items: center;
     color: #333;
@@ -517,6 +535,14 @@ footer p {
     margin-right: 0.5em;
 }
 
+#logo_mobile {
+    display: none;
+}
+
+#logo_w {
+    scale: .5;
+    /* position: fixed; */
+}
 
 /* Media query for mobile */
 @media (max-width: 768px) {
@@ -526,6 +552,14 @@ footer p {
 
     .hamburger {
         display: block;
+        scale: 2;
+    }
+
+    #logo_mobile {
+        display: block;
+        scale: .3;
+        position: relative;
+        top: -60vw;
     }
 
     .mobile-menu {
@@ -534,25 +568,30 @@ footer p {
 }
 
 @media only screen and (max-width: 768px) {
+
     /* Adjust header content */
     .header-content {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
+
     #head-nav ul {
         display: flex;
         flex-direction: column;
         gap: 10px;
         padding: 0;
         margin: 0;
-        background-color: #f8f8f8; /* Light background for better visibility */
+        background-color: #f8f8f8;
+        /* Light background for better visibility */
         border-radius: 5px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
+
     #head-nav ul li {
         margin: 5px 0;
     }
+
     #head-nav ul li a {
         font-size: 1.1rem;
         padding: 10px;
@@ -563,21 +602,26 @@ footer p {
         border-bottom: 1px solid #ddd;
         transition: background-color 0.3s ease;
     }
+
     #head-nav ul li a:hover {
         background-color: #eaeaea;
     }
+
     /* Adjust sections */
     .content-section {
         padding: 20px;
     }
+
     .section-title {
         font-size: 1.5rem;
         text-align: center;
     }
+
     .section-description {
         font-size: 1rem;
         line-height: 1.5;
     }
+
     /* Gallery adjustments */
     .gallery {
         display: flex;
@@ -585,39 +629,48 @@ footer p {
         gap: 10px;
         justify-content: center;
     }
+
     .gallery-img {
         width: 100%;
         max-width: 200px;
         height: auto;
     }
+
     /* Table adjustments */
     .price-table {
         width: 100%;
         font-size: 0.9rem;
     }
-    .price-table th, .price-table td {
+
+    .price-table th,
+    .price-table td {
         padding: 10px;
         text-align: center;
     }
+
     /* Attractions grid adjustments */
     .attractions-grid {
         display: grid;
         grid-template-columns: 1fr;
         gap: 15px;
     }
+
     .attraction-item {
         text-align: center;
     }
+
     /* Map adjustments */
     .map-container iframe {
         width: 100%;
         height: 300px;
     }
+
     /* Footer adjustments */
     footer {
         text-align: center;
         font-size: 0.9rem;
     }
+
     .social-links a {
         margin: 0 5px;
     }
