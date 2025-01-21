@@ -544,6 +544,30 @@ footer p {
     /* position: fixed; */
 }
 
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #0fad0d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #0fad0d;
+}
+
+#scrollToTopBtn::before {
+    content: '↑'; /* Unicode šípka nahor */
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
 /* Media query for mobile */
 @media (max-width: 768px) {
     #head-nav {

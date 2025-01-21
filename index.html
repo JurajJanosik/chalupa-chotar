@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <button id="scrollToTopBtn"></button>
 
     <header>
         <div class="header-content">
@@ -23,10 +24,10 @@
                     <li><a href="#about">O NÁS</a></li>
                     <li><a href="#equipment">VYBAVENIE</a></li>
                     <li><a href="#gallery">GALÉRIA</a></li>
-                    <li><a href="#price">CENNÍK A REZERVÁCIE</a></li>
                     <!-- <li><a href="#evaluation">HODNOTENIA</a></li> -->
                     <li><a href="#atraction">ATRAKCIE V OKOLÍ</a></li>
                     <li><a href="#mapa">MAPA</a></li>
+                    <li><a href="#price">CENNÍK A REZERVÁCIE</a></li>
                     <li><a href="#contact">KONTAKT</a></li>
                 </ul>
             </nav>
@@ -37,10 +38,10 @@
                     <li><a href="#about">O NÁS</a></li>
                     <li><a href="#equipment">VYBAVENIE</a></li>
                     <li><a href="#gallery">GALÉRIA</a></li>
-                    <li><a href="#price">CENNÍK A REZERVÁCIE</a></li>
                     <!-- <li><a href="#evaluation">HODNOTENIA</a></li> -->
                     <li><a href="#atraction">ATRAKCIE V OKOLÍ</a></li>
                     <li><a href="#mapa">MAPA</a></li>
+                    <li><a href="#price">CENNÍK A REZERVÁCIE</a></li>
                     <li><a href="#contact">KONTAKT</a></li>
                     <!-- <li><img id="logo_w" src="images/logo-vmake_w.png" alt=""></li> -->
                 </ul>
@@ -170,47 +171,12 @@
     </div>
 
     <section id="price" class="content-section">
-        <h2 class="section-title">Cenník</h2>
-        <table class="price-table">
-            <tr>
-                <th>Typ ubytovania</th>
-                <th>Sezóna</th>
-                <th>Cena za noc</th>
-            </tr>
-            <tr>
-                <td>Celá chalupa (max 14 osôb)</td>
-                <td>Letná sezóna</td>
-                <td>200€</td>
-            </tr>
-            <tr>
-                <td>Celá chalupa (max 14 osôb)</td>
-                <td>Zimná sezóna</td>
-                <td>250€</td>
-            </tr>
-            <tr>
-                <td>Celá chalupa (max 14 osôb)</td>
-                <td>Mimo sezóny</td>
-                <td>180€</td>
-            </tr>
-            <tr>
-                <td>Prístelka</td>
-                <td>Celoročne</td>
-                <td>15€</td>
-            </tr>
-        </table>
-    </section>
-
-    <section id="price" class="content-section">
-        <h2 class="section-title">Rezervácie</h2>
-        <div id="embed-nGRV6r3FYR3EYG9qzxDG7" data-mu-embed-origin="https://www.megaubytovanie.sk" style="width:100%">
-            <script src="https://www.megaubytovanie.sk/muEmbed.js" type="text/javascript" async defer
-                onload='muEmbed({embedType:"calendar-widget",accommodationId:7971,token:"0f680501f8668e355ea7466ae71c8c75",settings:{"months_count":12,"zoom":"100%","blocked_intervals_color":"rgba(15,173,13,1)","background_color":"rgba(255,255,255,1)","button_color":"rgba(15,173,13,1)","show_reservation_button":true,"accommodation_unit_id":null}}, "embed-nGRV6r3FYR3EYG9qzxDG7")'></script>
-        </div>
+        <h2 class="section-title">Hodnotenia</h2>
+        <div id="embed-WQ6BeaPUIwhsHmjGKdikX" data-mu-embed-origin="https://www.megaubytovanie.sk" style="width:100%"><script src="https://www.megaubytovanie.sk/muEmbed.js" type="text/javascript" async defer onload='muEmbed({embedType:"rating-widget",accommodationId:7971,token:"3297dc5d38a477c1d7341a8451d3fc90",settings:{"header_text_color":"rgba(24,29,34,1)","background_color":"rgba(255,255,255,1)","button_color":"rgba(15,173,13,1)","show_customer_reviews":true,"show_reviews_as_carousel":true,"show_add_rating_button":true}}, "embed-WQ6BeaPUIwhsHmjGKdikX")'></script></div>
     </section>
 
     <section id="atraction" class="content-section">
         <h2 class="section-title">Atrakcie v okolí</h2>
-        <p class="section-description">Vzdialenosti sú uvedené vzdušnou čiarou.</p>
         <div class="attractions-grid">
             <div class="attraction-item">
                 <img src="./images/rozhladna-terchovske-srdce.webp" alt="Rozhľadňa Terchovské srdce">
@@ -265,19 +231,7 @@
         </div>
     </section>
 
-
-    <section id="mapa" class="content-section map-container">
-        <h2 class="section-title">Mapa a poloha chaty</h2>
-        <div class="map-filter-wrapper">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.5197164087276!2d19.03700961498211!3d49.27232827933043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47144feefcca6d0b%3A0x90abb4e30ab76280!2sChalupa%20Chot%C3%A1r!5e0!3m2!1ssk!2ssk!4v1696690095956!5m2!1ssk!2ssk"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </div>
-    </section>
-
-    <section id="skivratna" class="ski-vratna">
+    <!--<section id="skivratna" class="ski-vratna">
         <div class="image-container">
             <img src="./images/dolne pozadie.jpg" alt="ski" class="background-image">
             <div class="text-overlay">
@@ -291,8 +245,58 @@
                 <a href="atrakcie.html" class="read-more-button">Čítať viac</a>
             </div>
         </div>
+    </section>-->
+
+
+    <section id="mapa" class="content-section map-container">
+        <h2 class="section-title">Mapa a poloha chaty</h2>
+        <div class="map-filter-wrapper">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.5197164087276!2d19.03700961498211!3d49.27232827933043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47144feefcca6d0b%3A0x90abb4e30ab76280!2sChalupa%20Chot%C3%A1r!5e0!3m2!1ssk!2ssk!4v1696690095956!5m2!1ssk!2ssk"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
     </section>
 
+    <section id="price" class="content-section">
+        <h2 class="section-title">Cenník</h2>
+        <table class="price-table">
+            <tr>
+                <th>Typ ubytovania</th>
+                <th>Sezóna</th>
+                <th>Cena za noc</th>
+            </tr>
+            <tr>
+                <td>Celá chalupa (max 14 osôb)</td>
+                <td>Letná sezóna</td>
+                <td>200€</td>
+            </tr>
+            <tr>
+                <td>Celá chalupa (max 14 osôb)</td>
+                <td>Zimná sezóna</td>
+                <td>250€</td>
+            </tr>
+            <tr>
+                <td>Celá chalupa (max 14 osôb)</td>
+                <td>Mimo sezóny</td>
+                <td>180€</td>
+            </tr>
+            <tr>
+                <td>Prístelka</td>
+                <td>Celoročne</td>
+                <td>15€</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="price" class="content-section">
+        <h2 class="section-title">Rezervácie</h2>
+        <div id="embed-nGRV6r3FYR3EYG9qzxDG7" data-mu-embed-origin="https://www.megaubytovanie.sk" style="width:100%">
+            <script src="https://www.megaubytovanie.sk/muEmbed.js" type="text/javascript" async defer
+                onload='muEmbed({embedType:"calendar-widget",accommodationId:7971,token:"0f680501f8668e355ea7466ae71c8c75",settings:{"months_count":4,"zoom":"100%","blocked_intervals_color":"rgba(15,173,13,1)","background_color":"rgba(255,255,255,1)","button_color":"rgba(15,173,13,1)","show_reservation_button":true,"accommodation_unit_id":null}}, "embed-nGRV6r3FYR3EYG9qzxDG7")'></script>
+        </div>
+    </section>
 
     <footer id="contact">
         <p>&copy; 2024 Chalupa Chotár | Kontakt:</p>
@@ -317,6 +321,23 @@
         </div>
     </footer>
 
-</body>
+    <script>
+        window.onscroll = function() { scrollFunction() };
 
+        function scrollFunction() {
+            const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        }
+
+        document.getElementById("scrollToTopBtn").onclick = function() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
 </html>
