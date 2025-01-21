@@ -356,6 +356,7 @@ footer p {
     border-radius: 15px; /* Zaoblené rohy */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Jemný tieň */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
 }
 
 .map-filter-wrapper:hover {
@@ -365,6 +366,7 @@ footer p {
 
 .map-filter-wrapper iframe {
     border-radius: inherit; /* Zachovanie zaoblených rohov pre mapu */
+    width: 100%;
 }
 
 .hamburger {
