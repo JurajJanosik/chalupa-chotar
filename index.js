@@ -118,4 +118,61 @@ document.addEventListener("DOMContentLoaded", (event) => {
             }
         });
     });
+        
+    let today = new Date();
+    let sections = document.querySelectorAll(".price-section");
+    let container = document.getElementById("priceSections");
+    let found = false;
+
+    sections.forEach((section) => {
+        let startDate = new Date(section.getAttribute("data-start"));
+        let endDate = new Date(section.getAttribute("data-end"));
+
+        if (today >= startDate && today <= endDate) {
+            section.classList.add("current");
+            container.scrollLeft = section.offsetLeft - container.offsetLeft;
+            found = true;
+        }
+    });
+
+    // Ak sa nenašla aktuálna sezóna, zobrazí prvú
+    if (!found) {
+        container.scrollLeft = 0;
+    }
+
+    let container2 = document.querySelector(".price-sections");
+
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "ArrowRight") {
+            container2.scrollBy({ left: 300, behavior: "smooth" });
+        } else if (event.key === "ArrowLeft") {
+            container2.scrollBy({ left: -300, behavior: "smooth" });
+        }
+    });
+
+    const leftArrow = document.querySelector(".arrow-left");
+    const rightArrow = document.querySelector(".arrow-right");
+
+    function scrollLeft() {
+        container2.scrollBy({ left: -300, behavior: "smooth" });
+    }
+
+    function scrollRight() {
+        container2.scrollBy({ left: 300, behavior: "smooth" });
+    }
+
+    // Posúvanie kliknutím na šípky
+    leftArrow.addEventListener("click", scrollLeft);
+    rightArrow.addEventListener("click", scrollRight);
+
+    // Posúvanie šípkami na klávesnici
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "ArrowRight") {
+            scrollRight();
+        } else if (event.key === "ArrowLeft") {
+            scrollLeft();
+        }
+    });
 });
+
+
