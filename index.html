@@ -4,24 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chalupa Chotár</title>
+    <title>Chalupa Chotár - Dočasne nedostupné</title>
     <link rel="stylesheet" href="styles.css">
     <script type="module" src="index.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Chalupa Chotár – Terchová</title>
-    <meta name="description" content="Ubytovanie v krásnej prírode, ideálne pre rodiny a turistov. Rezervujte si pobyt ešte dnes!">
-    <meta name="keywords" content="chalupa, ubytovanie, turistika, hory, dovolenka, terchova">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="noindex, nofollow"> <!-- Zastaví indexovanie Googlom počas vypnutia -->
+    
+    <style>
+        /* Jednoduchý štýl pre oznam o vypnutí */
+        .maintenance-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            font-family: sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+        .maintenance-content {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h1 { color: #2c3e50; }
+    </style>
 </head>
 
 <body>
+
+    <!-- OZNAM O VYPNUTÍ STRÁNKY -->
+    <div class="maintenance-wrapper">
+        <div class="maintenance-content">
+            <img src="./images/logo-vmake_bw.png" alt="Logo" style="width: 150px; margin-bottom: 20px;">
+            <h1>Webová stránka je momentálne nedostupná</h1>
+            <p>Na obsahu pracujeme alebo je sezóna ukončená.</p>
+            <p>V prípade otázok nás kontaktujte na: <strong>mlakyterchova@gmail.com</strong></p>
+        </div>
+    </div>
+
+    <!-- ZACIATOK KOMENTARA - Všetko pod týmto riadkom je skryté
+    
     <button id="scrollToTopBtn"></button>
 
     <header>
         <div class="header-content">
-            <!-- <div id="logo_container"><img id="logo_mobile" src="images/logo-vmake_bw.png" alt=""></div> -->
-            <!-- <img id="logo_mobile" src="images/logo-vmake_bw.png" alt=""> -->
             <h1>Vitajte na Chalupe Chotár</h1>
             <div class="hamburger">&#9776;</div>
             <nav id="head-nav">
@@ -29,7 +58,6 @@
                     <li><a href="#about">O NÁS</a></li>
                     <li><a href="#equipment">VYBAVENIE</a></li>
                     <li><a href="#gallery">GALÉRIA</a></li>
-                    <!-- <li><a href="#evaluation">HODNOTENIA</a></li> -->
                     <li><a href="#atraction">ATRAKCIE V OKOLÍ</a></li>
                     <li><a href="#mapa">MAPA</a></li>
                     <li><a href="#price">CENNÍK A REZERVÁCIE</a></li>
@@ -43,128 +71,36 @@
                     <li><a href="#about">O NÁS</a></li>
                     <li><a href="#equipment">VYBAVENIE</a></li>
                     <li><a href="#gallery">GALÉRIA</a></li>
-                    <!-- <li><a href="#evaluation">HODNOTENIA</a></li> -->
                     <li><a href="#atraction">ATRAKCIE V OKOLÍ</a></li>
                     <li><a href="#mapa">MAPA</a></li>
                     <li><a href="#price">CENNÍK A REZERVÁCIE</a></li>
                     <li><a href="#contact">KONTAKT</a></li>
-                    <!-- <li><img id="logo_w" src="images/logo-vmake_w.png" alt=""></li> -->
                 </ul>
             </div>
-
-
         </div>
     </header>
 
     <section id="about" class="content-section">
         <h2 class="section-title">O nás</h2>
         <p class="section-description"><b>Útulná, moderne zariadená Chata Chotár</b> sa nachádza v obľúbenej a turistami
-            vyhľadávanej <b>obci Terchová</b>. Krásne okolité tiché prostredie Vám zaručí dokonalý relax. Mnohé atrakcie
-            a
-            turistické lokality sú veľkým lákadlom nášho regiónu Slovenska. Radi u nás uvítame rodiny s deťmi, partie
-            priateľov a známych, cyklistov, turistov, lyžiarov.
-        </p>
-    </section>
-
-    <section id="about" class="content-section">
-        <h2 class="section-title">Ubytovanie</h2>
-        <p class="section-description">Celoročne Vás ubytujeme s celkovou <b>14 lôžok</b>. Spoločenská miestnosť s
-            <b>televízorom s káblovým príjmom, pohovkou a spoločenskými hrami</b> Vám poskytuje priestor na trávenie
-            spoločného
-            času. Je prepojená s kuchynskou časťou, kde sa nachádza<b> elektrická rúra, rýchlovarná kanvica, chladnička
-                s
-                mrazničkou, umývačka riadu, indukčná varná doska a jedálenské posedenie.</b> Spánok si vychutnáte v
-            <b>šiestich
-                izbách,</b> <b>jednej 2-lôžkovej</b> s dvomi samostatnými lôžkami, <b>troch 2-lôžkových</b> s manželskou
-            posteľou a <b>dvoch
-                3-lôžkových</b> s manželskou posteľou a samostatným lôžkom. V prípade záujmu Vám doložíme <b>detskú
-                postieľku</b> a
-            <b>detskú jedálenskú stoličku</b>. <b>Bezplatné WiFi</b> pripojenie na internet je samozrejmosťou.
-
-            Zo spoločenskej miestnosti vyjdete na terasu, kde sa nachádza <b>vonkajšie posedenie, plynový
-                gril,kotlík</b> na
-            guláš a <b>detské ihrisko</b>. Pre deti máme k dispozícii hračky. V prípade, že prídete s vlastnými lyžami,
-            poskytneme Vám priestor
-            na ich uskladnenie. Bezplatné parkovanie je zabezpečené pri objekte pre <b>4 vozidlá</b>.
-
-            Deti sa potešia výletu k Drevenému betlehemu Terchová, jazde Terchovským vláčikom, Lanovému Parku Dino
-            Adventure. Oddych si doprajete v Relaxačnom centre Terchovec. Viac či menej náročná
-            turistika Vás čaká pri prechádzke k Rozhľadni Terchovské srdce, Soche Juraja Jánošíka, Kalvárii v Terchovej,
-            Jánošíkovým dieram či pri zdolaní Malého a Veľkého Rozsutca. V zime si užijete lyžovačku na zjazdovkách
-            niektorého z centier Vrátna Free Time Zone alebo Snow Sun Vadičov.
-        </p>
+            vyhľadávanej <b>obci Terchová</b>.</p>
     </section>
 
     <section id="equipment" class="content-section">
         <h2 class="section-title">Vybavenie</h2>
         <div class="container">
-            <div class="card">
-                <i class="fas fa-home"></i>
-                <h3>Otvorená v 2020</h3>
-                <p>Novovybudovaná komfortne Chalupa Chotár v Terchovej na prenájom.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-bed"></i>
-                <h3>6 spální</h3>
-                <p>Chata je vybavená s 14 pevnými lôžkami+postieľka, zameraná na Vaše pohodlie a relax.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-hot-tub"></i>
-                <h3>2 kúpeľne</h3>
-                <p>V každej kúpelni je k dispozícii WC, umývadlo a sprchovací kút.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-parking"></i>
-                <h3>Parkovanie pri objekte</h3>
-                <p>Vonkašie parkovanie priamo pred objektom ponúka dostatok miesta pre 4 vozidlá.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-layer-group"></i>
-                <h3>Prízemie</h3>
-                <p>Terasové dvere z obývačky prepájajú interiér s vonkajšou záhradou a altánkom.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-child"></i>
-                <h3>Detský kútik</h3>
-                <p>Nachádza sa na prízemí, detská kuchynka s výbavou, detský písací stôl so stoličkami, kočík na hranie
-                    a spoločenské hry.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-couch"></i>
-                <h3>Zariadenie</h3>
-                <p>Celý objekt je štýlovo zariadený so zmyslom pre detail.</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-seedling"></i>
-                <h3>Záhrada</h3>
-                <p>Záhrada je prispôsobená na dokonalý oddych a relax. Je tu umiestnené detské ihrisko, šmýkľavka,
-                    záhradný domček, trampolína, hojdacia sieť, oddychová zóna s posedením a priestorom na grilovanie či
-                    varenie gulášu.</p>
-            </div>
+            <div class="card"><i class="fas fa-home"></i><h3>Otvorená v 2020</h3></div>
+            <div class="card"><i class="fas fa-bed"></i><h3>6 spální</h3></div>
         </div>
-        <a href="./equipment.html" class="gallery-button">Zobraz kompletné vybavenie</a>
     </section>
 
     <section id="gallery" class="content-section">
         <h2 class="section-title">Galéria</h2>
         <div class="gallery">
-            <div class="row1">
-                <img src="./images/IMG_0356.jpg" alt="Chalupa Chotár 1" class="gallery-img">
-                <img src="./images/IMG_0366.jpg" alt="Chalupa Chotár 2" class="gallery-img">
-                <img src="./images/IMG_0358.jpg" alt="Chalupa Chotár 3" class="gallery-img">
-                <img src="./images/IMG_0384.jpg" alt="Chalupa Chotár 3" class="gallery-img">
-            </div>
-            <div class="row2">
-                <img src="./images/IMG_0361.jpg" alt="Chalupa Chotár 1" class="gallery-img">
-                <img src="./images/IMG_0372.jpg" alt="Chalupa Chotár 2" class="gallery-img">
-                <img src="./images/IMG_0363.jpg" alt="Chalupa Chotár 3" class="gallery-img">
-                <img src="./images/IMG_0364.jpg" alt="Chalupa Chotár 3" class="gallery-img">
-            </div>
+            <img src="./images/IMG_0356.jpg" alt="Chalupa Chotár 1" class="gallery-img">
         </div>
-        <a href="./gallery.html" class="gallery-button">Zobraz kompletnú galériu</a>
     </section>
 
-    <!-- Modal na zobrazenie obrázkov -->
     <div id="imageModal" class="modal" style="display: none;">
         <span class="close">&times;</span>
         <img class="modal-content" id="modalImage" alt="Zväčšený obrázok">
@@ -172,205 +108,30 @@
         <span class="next">&#10095;</span>
     </div>
 
-    <section id="" class="content-section">
-        <h2 class="section-title">Hodnotenia</h2>
-        <div id="embed-WQ6BeaPUIwhsHmjGKdikX" data-mu-embed-origin="https://www.megaubytovanie.sk" style="width:100%"><script src="https://www.megaubytovanie.sk/muEmbed.js" type="text/javascript" async defer onload='muEmbed({embedType:"rating-widget",accommodationId:7971,token:"3297dc5d38a477c1d7341a8451d3fc90",settings:{"header_text_color":"rgba(24,29,34,1)","background_color":"rgba(255,255,255,1)","button_color":"rgba(15,173,13,1)","show_customer_reviews":true,"show_reviews_as_carousel":true,"show_add_rating_button":true}}, "embed-WQ6BeaPUIwhsHmjGKdikX")'></script></div>
-    </section>
-
     <section id="atraction" class="content-section">
         <h2 class="section-title">Atrakcie v okolí</h2>
-        <div class="attractions-grid">
-            <div class="attraction-item">
-                <img src="./images/rozhladna-terchovske-srdce.webp" alt="Rozhľadňa Terchovské srdce">
-                <p>Rozhľadňa Terchovské srdce</p>
-                <span></span>
-            </div>
-            <div class="attraction-item">
-                <img src="./images/u janosov.jpg" alt="Osada Jánošíkovci">
-                <p>Osada Jánošíkovci</p>
-                <span></span>
-            </div>
-            <div class="attraction-item">
-                <img src="./images/dreveny-betlehem-terchova.webp" alt="Drevený betlehem Terchová">
-                <p>Drevený betlehem Terchová</p>
-                <span></span>
-            </div>
-            <div class="attraction-item">
-                <img src="./images/Terchovsky-vlacik.webp" alt="Terchovský vláčik">
-                <p>Terchovský vláčik</p>
-                <span></span>
-            </div>
-            <div class="attraction-item">
-                <img src="./images/janosikove-dni.jpg" alt="Jánošíkove dni">
-                <p>Jánošíkove dni</p>
-                <span></span>
-            </div>
-            <div class="attraction-item">
-                <img src="./images/muzeum_juraja_janosika.jpg" alt="Múzeum Juraja Jánošíka">
-                <p>Múzeum Juraja Jánošíka</p>
-                <span></span>
-            </div>
-            <div class="attraction-item">
-                <img src="./images/socha-janosik.jpg" alt="Socha Juraja Jánošíka">
-                <p>Socha Juraja Jánošíka</p>
-                <span></span>
-            </div>
-            <div class="attraction-item">
-                <img src="./images/lanovy-park-dino-adventure.webp" alt="Lanový Park Dino Adventure">
-                <p>Lanový Park Dino Adventure</p>
-                <span></span>
-            </div>
-            <div class="attraction-item">
-                <img src="./images/vratna.jpg" alt="Vratna">
-                <p>Vrátna Free Time Zone</p>
-                <span></span>
-            </div>
-            <div class="attraction-item">
-                <img src="./images/zvonica u marunov.jpg" alt="Zvonica u Marunov">
-                <p>Zvonica u Marunov</p>
-                <span></span>
-            </div>
-        </div>
     </section>
-
-    <!--<section id="skivratna" class="ski-vratna">
-        <div class="image-container">
-            <img src="./images/dolne pozadie.jpg" alt="ski" class="background-image">
-            <div class="text-overlay">
-                <h2>V OKOLÍ</h2>
-                <p>
-                    Vrátna Malá Fatra je horské stredisko, kde si okrem tradičných zimných aktivít, môžete vychutnať
-                    aj
-                    leto. Keďže sa Vrátna nachádza v srdci národného parku Malá Fatra, najväčšou dominantou je najmä
-                    krásna príroda a dychberúce výhľady.
-                </p>
-                <a href="atrakcie.html" class="read-more-button">Čítať viac</a>
-            </div>
-        </div>
-    </section>-->
-
 
     <section id="mapa" class="content-section map-container">
         <h2 class="section-title">Mapa a poloha chaty</h2>
-        <div class="map-filter-wrapper">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.5197164087276!2d19.03700961498211!3d49.27232827933043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47144feefcca6d0b%3A0x90abb4e30ab76280!2sChalupa%20Chot%C3%A1r!5e0!3m2!1ssk!2ssk!4v1696690095956!5m2!1ssk!2ssk"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </div>
+        <iframe src="https://www.google.com/maps/embed?..." width="600" height="450"></iframe>
     </section>
 
     <section id="price" class="content-section">
         <div class="container">
             <h1 id="cennik">Cenník ubytovania</h1>
-            <div class="price-sections" id="priceSections">
-                <div class="price-section" data-start="2025-01-03" data-end="2025-04-01">
-                    <p class="season">Zimná sezóna (3.1.-1.4.)</p>
-                    <p class="price">20 € osoba / noc</p>
-                    <p class="min-nights">min. 4 osoby, min. 2 noci</p>
-                </div>
-                <div class="price-section" data-start="2025-04-02" data-end="2025-06-30">
-                    <p class="season">Letná mimosezóna (2.4.-30.6.)</p>
-                    <p class="price">20 € osoba / noc</p>
-                    <p class="min-nights">min. 4 osoby, min. 2 noci</p>
-                </div>
-                <div class="price-section" data-start="2025-04-18" data-end="2025-04-22">
-                    <p class="season">Veľkonočný pobyt (3.4.-6.4.)</p>
-                    <p class="price">250 € objekt / noc</p>
-                    <p class="min-nights">min. 3 noci</p>
-                </div>
-                <div class="price-section" data-start="2025-07-01" data-end="2025-08-31">
-                    <p class="season">Letná sezóna (1.7.-31.8.)</p>
-                    <p class="price">20 € osoba / noc</p>
-                    <p class="min-nights">min. 6 osoby, min. 3 noci</p>
-                </div>
-                <div class="price-section" data-start="2025-09-01" data-end="2025-12-22">
-                    <p class="season">Zimná mimosezóna (1.9.-22.12.)</p>
-                    <p class="price">20 € osoba / noc</p>
-                    <p class="min-nights">min. 4 osoby, min. 2 noci</p>
-                </div>
-                <div class="price-section" data-start="2025-12-23" data-end="2025-12-27">
-                    <p class="season">Vianočný pobyt (23.12.-27.12.)</p>
-                    <p class="price">20 € osoba / noc</p>
-                    <p class="min-nights">min. 4 osoby, min. 2 noci</p>
-                </div>
-                <div class="price-section" data-start="2025-12-28" data-end="2026-01-02">
-                    <p class="season">Silvester (28.12.-2.1.)</p>
-                    <p class="price">400 € objekt / noc</p>
-                    <p class="min-nights">min. 1 osoba, min. 4 noci</p>
-                </div>
-            </div>
-    
-            <div class="note">
-                <p><strong>Poznámky:</strong></p>
-                <p>Ceny sú za jednu osobu na jednu noc. Maximálna kapacita 14 osôb.</p>
-                <p>Check-in od 15:00, check-out do 10:00.</p>
-                <p>Domáce zvieratá nie sú povolené.</p>
-                <p>Pre rezervácie: mlakyterchova@gmail.com | +421 910 284 536</p>
-            </div>
-        </div>
-
-        <!-- <div class="arrows">
-            <button class="arrow arrow-left">❮</button>
-            <button class="arrow arrow-right">❯</button>
-        </div> -->
-    </section>
-
-
-
-    <section id="price" class="content-section">
-        <h2 class="section-title">Rezervácie</h2>
-        <div id="embed-nGRV6r3FYR3EYG9qzxDG7" data-mu-embed-origin="https://www.megaubytovanie.sk" style="width:100%">
-            <script src="https://www.megaubytovanie.sk/muEmbed.js" type="text/javascript" async defer
-                onload='muEmbed({embedType:"calendar-widget",accommodationId:7971,token:"0f680501f8668e355ea7466ae71c8c75",settings:{"months_count":4,"zoom":"100%","blocked_intervals_color":"rgba(15,173,13,1)","background_color":"rgba(255,255,255,1)","button_color":"rgba(15,173,13,1)","show_reservation_button":true,"accommodation_unit_id":null}}, "embed-nGRV6r3FYR3EYG9qzxDG7")'></script>
+            <div class="price-sections" id="priceSections"></div>
         </div>
     </section>
 
-    <footer id="contact" style="background-color: #222; color: #fff; padding: 40px 0; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
-        <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap;">
-            
-            <!-- Ľavá časť - Logo a Popis -->
-            <div style="flex: 1; min-width: 300px; text-align: left;">
-                <img src="./images/logo-vmake_w.png" alt="Chalupa Chotár Logo" style="width: 150px; margin-bottom: 20px;">
-                <h2 style="font-size: 20px; margin-bottom: 10px;">Chalupa Chotár</h2>
-                <p style="font-size: 14px; line-height: 1.5;">
-                    Moderná chalupa na prenájom v krásnej prírode Malej Fatry. Ideálne miesto na oddych 
-                    pre rodiny s deťmi alebo skupiny priateľov.
-                </p>
-            </div>
-    
-            <div style="flex: 1; min-width: 200px; text-align: left;">
-                <h3 style="font-size: 20px; margin-bottom: 10px;">Navigácia</h3>
-                <ul style="list-style: none; padding: 0;">
-                    <li style="margin-bottom: 8px;"><a href="#about" style="color: #fff; text-decoration: underline;">O nás</a></li>
-                    <li style="margin-bottom: 8px;"><a href="#equipment" style="color: #fff; text-decoration: underline;">Vybavenie</a></li>
-                    <li style="margin-bottom: 8px;"><a href="#gallery" style="color: #fff; text-decoration: underline;">Galéria</a></li>
-                    <li style="margin-bottom: 8px;"><a href="#atraction" style="color: #fff; text-decoration: underline;">Atrakcie v okolí</a></li>
-                    <li style="margin-bottom: 8px;"><a href="#price" style="color: #fff; text-decoration: underline;">Cenník a rezervácie</a></li>
-                    <li style="margin-bottom: 8px;"><a href="#contact" style="color: #fff; text-decoration: underline;">Kontakt</a></li>
-                </ul>
-            </div>
-    
-            <!-- Pravá časť - Sociálne siete a Hodnotenie -->
-            <div style="flex: 1; min-width: 300px; text-align: left;">
-                <h3 style="font-size: 20px; margin-bottom: 10px;">Sledujte nás</h3>
-                <a href="https://www.facebook.com/p/Chalupa-Chot%C3%A1r-100070509302429/?locale=sk_SK" target="_blank" style="color: #fff; margin-right: 10px;">Facebook</a>
-                <a href="https://www.instagram.com/chalupa_chotar/" target="_blank" style="color: #fff;">Instagram</a>
-    
-                <h3 style="font-size: 20px; margin-top: 20px;">Hodnotenie</h3>
-                <p style="font-size: 14px; line-height: 1.5;">
-                    Chalupa Chotár je ideálne miesto pre oddych. Hostia si pochvaľujú krásne prostredie, komfort a vybavenie. 
-                    <strong>Naše hodnotenie je 10 z 10!</strong>
-                </p>
-            </div>
-            
+    <footer id="contact" style="background-color: #222; color: #fff; padding: 40px 0;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2>Chalupa Chotár</h2>
         </div>
     </footer>
 
     <script>
         window.onscroll = function() { scrollFunction() };
-
         function scrollFunction() {
             const scrollToTopBtn = document.getElementById("scrollToTopBtn");
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -379,12 +140,13 @@
                 scrollToTopBtn.style.display = "none";
             }
         }
-
         document.getElementById("scrollToTopBtn").onclick = function() {
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
     </script>
+
+    KONIEC KOMENTARA -->
 
 </body>
 </html>
